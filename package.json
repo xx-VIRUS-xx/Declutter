@@ -1,0 +1,24 @@
+{
+  "name": "declutter",
+  "version": "0.1.0",
+  "description": "Chrome MV3 extension to hide clutter from webpages and remember choices per site.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run clean && npm run typecheck && node esbuild.config.mjs && npm run copy-assets",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit",
+    "copy-assets": "node scripts/copy-assets.mjs",
+    "test": "node --test --import tsx tests/**/*.test.ts",
+    "watch": "node esbuild.config.mjs --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^20.14.0",
+    "esbuild": "^0.23.0",
+    "jsdom": "^24.1.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  }
+}
