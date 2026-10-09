@@ -1,5 +1,7 @@
 # Declutter
 
+> System design: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+
 A browser extension that lets users remove distracting UI elements from web apps and persist those preferences per site.
 
 ## Product goal
